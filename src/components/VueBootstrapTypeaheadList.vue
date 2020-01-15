@@ -83,7 +83,7 @@ export default {
 
       const re = new RegExp(this.escapedQuery, 'gi')
 
-      // Filter, sort, and concat
+      // Filter
       return this.data.filter(i => i.text.match(re) !== null);
     }
   },
